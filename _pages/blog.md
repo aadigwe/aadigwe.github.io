@@ -4,7 +4,7 @@ permalink: /blog/
 author_profile: true
 title: "Blog"
 header :
-    image: "/assets/images/header.jpeg"
+    image: "/assets/images/blog-header.png"
 layouts_gallery:
   - url: https://maelfabien.github.io/ml/
     image_path: /assets/images/ml_short.png

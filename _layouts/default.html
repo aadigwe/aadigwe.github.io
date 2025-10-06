@@ -80,13 +80,6 @@
           <p>{{ site.data.main_info.title }}</p>
           <p>{{ site.data.main_info.email }}</p>
           <p>
-            <span onclick="window.open('{{ site.data.main_info.bsky }}')" style="cursor: pointer">
-              <i class="fa-brands fa-bluesky" style="padding-top: 10px"></i>
-            </span>
-
-            <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-              <i class="fa-brands fa-twitter fa-lg"></i>
-            </span>
 
             <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
               <i class="fa-brands fa-linkedin fa-lg"></i>
@@ -110,13 +103,15 @@
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a>
           </li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#prospective-students" | prepend:
-              site.baseurl }}>Prospective Students</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#education" | prepend: site.baseurl
+              }}>Education</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl
               }}>Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#teaching" | prepend: site.baseurl
+              }}>Teaching</a></li>
           <!--<li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>-->
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl
-              }}>Vita</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>CV</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -129,16 +124,9 @@
           {{ site.data.main_info.name }}
         </div>
         <div class="four columns">
-          {{ site.data.main_info.email }}
+          based on <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>'s template
         </div>
         <div class="four columns">
-          <span onclick="window.open('{{ site.data.main_info.bsky }}')" style="cursor: pointer">
-            <i class="fa-brands fa-bluesky fa-sm" style="padding-top: 10px"></i>
-          </span>
-
-          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-            <i class="fa-brands fa-twitter"></i>
-          </span>
 
           <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
             <i class="fa-brands fa-linkedin"></i>

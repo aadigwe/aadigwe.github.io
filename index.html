@@ -56,14 +56,14 @@ title: Home
 <div class="docs-section" id="education">
   <h4>🎓 Education</h4>
   <div class="paper">
-    <p class="title"><b>University of Edinburgh, UK<b style="float:right;">Sep. 2023 - present</b></b></p>
+    <p class="title"><b>University of Edinburgh, UK<b style="float:right;">May. 2023 - present</b></b></p>
 
     <p>PhD in Informatics: ILCC: Language Processing, Speech Technology, Information Retrieval, Cognition</p>
     <p></p>
   </div>
 
   <div class="paper">
-    <p class="title"><b>University of Helsinki, Finland<b style="float:right;">Sep. 2021 - 2023</b></b></p>
+    <p class="title"><b>University of Helsinki, Finland<b style="float:right;">Sep. 2021 - Apr 2023</b></b></p>
 
     <p>PhD in Applied Linguistics</p>
     <p>First year studies towards a PhD degree. Supervised by Dr. Juraj Šimko and Dr Esther Klabbers </p>
@@ -78,7 +78,7 @@ title: Home
   <div class="paper">
     <p class="title"><b>Northeastern University, USA<b style="float:right;">Aug 2014 - May 2019</b></b></p>
 
-    <p>M.S. in Computer Science</p>
+    <p>B.S. in Electrical Engineering</p>
     <p></p>
   </div>
 </div>
@@ -134,6 +134,10 @@ title: Home
 
           {% if paper.data %}
           <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+          {% endif %}
+
+          {% if paper.projectpage %}
+          <a class="button" href="{{ paper.projectpage }}" target="_blank">Project Page</a>
           {% endif %}
 
         </div>
@@ -269,8 +273,7 @@ title: Home
   <div class="paper">
     <p class="title"><b>Computer Programming for Speech and Language Processing, Teaching Assistant, University of
         Edinburgh</b></p>
-    <p>Semester One, 2024 <a
-        href="https://docs.google.com/document/d/1t40h7CmiczVrV1RBMPAbVZUjnFEyFOly-w7_iWaIqFc/edit">here</a></p>
+    <p>Semester One, 2024</p>
   </div>
   <div class="paper">
     <p class="title"><b>COMS W4705: Natural Language Processing, Teaching Assistant, Columbia University</b></p>
@@ -289,6 +292,8 @@ title: Home
   <h4>📄 CV</h4>
 
   <p>Full Resume in <a href={{ "/assets/cv/cv_adaeze.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
+  <p>My Research Overview <a href={{ "/assets/cv/researchoverview_adaeze.pdf" | prepend: site.baseurl }}
+      target="_blank">PDF</a>.</p>
 
   <!--
 The Timeline 
